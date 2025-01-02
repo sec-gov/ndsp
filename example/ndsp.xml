@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ndspRpt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ndsp-20241231.xsd">
+	<ndsp>
+		<xchg>Cboe BYZ</xchg>
+		<pstngDt>2024-10-02</pstngDt>
+		<frstTradDt>2024-10-02</frstTradDt>
+		<ticker>GQQQ</ticker>
+		<issrTyp>Trust</issrTyp>
+		<othIssrTyp/>
+		<clss>Exchange-Traded Fund</clss>
+		<othClss/>
+		<undrlyngInstrm>Common Stock</undrlyngInstrm>
+		<usMkts>Y</usMkts>
+		<nonUsMkts>N</nonUsMkts>
+		<cashSttl>N</cashSttl>
+		<physSttl>N</physSttl>
+		<amSttl>Y</amSttl>
+		<pmSttl>Y</pmSttl>
+		<othSttl>Trades Locked in at Exchange and settled at NSCC.</othSttl>
+		<indxTyp>N/A</indxTyp>
+		<posLmts>N/A</posLmts>
+	</ndsp>
+	<ndsp>
+		<xchg>Cboe BYZ</xchg>
+		<pstngDt>2024-10-02</pstngDt>
+		<frstTradDt>2024-10-02</frstTradDt>
+		<ticker>QQQP</ticker>
+		<issrTyp>Trust</issrTyp>
+		<othIssrTyp/>
+		<clss>Exchange-Traded Fund</clss>
+		<othClss/>
+		<undrlyngInstrm>Invesco QQQ Trust</undrlyngInstrm>
+		<usMkts>Y</usMkts>
+		<nonUsMkts>N</nonUsMkts>
+		<cashSttl>N</cashSttl>
+		<physSttl>N</physSttl>
+		<amSttl>Y</amSttl>
+		<pmSttl>Y</pmSttl>
+		<othSttl>Trades Locked in at Exchange and settled at NSCC.</othSttl>
+		<indxTyp>N/A</indxTyp>
+		<posLmts>N/A</posLmts>
+	</ndsp>
+	<ndsp>
+		<xchg>Cboe BYZ</xchg>
+		<pstngDt>2024-10-02</pstngDt>
+		<frstTradDt>2024-10-02</frstTradDt>
+		<ticker>SPYQ</ticker>
+		<issrTyp>Trust</issrTyp>
+		<othIssrTyp/>
+		<clss>Exchange-Traded Fund</clss>
+		<othClss/>
+		<undrlyngInstrm>SPDR® S&amp;P 500® Exchange-Traded Fund Trust</undrlyngInstrm>
+		<usMkts>Y</usMkts>
+		<nonUsMkts>N</nonUsMkts>
+		<cashSttl>N</cashSttl>
+		<physSttl>N</physSttl>
+		<amSttl>Y</amSttl>
+		<pmSttl>Y</pmSttl>
+		<othSttl>Trades Locked in at Exchange and settled at NSCC.</othSttl>
+		<indxTyp>N/A</indxTyp>
+		<posLmts>N/A</posLmts>
+	</ndsp>
+	<ndsp>
+		<xchg>Cboe BYZ</xchg>
+		<pstngDt>2024-10-02</pstngDt>
+		<frstTradDt>2024-10-02</frstTradDt>
+		<ticker>TLTM</ticker>
+		<issrTyp>Trust</issrTyp>
+		<othIssrTyp/>
+		<clss>Exchange-Traded Fund</clss>
+		<othClss/>
+		<undrlyngInstrm>iShares® 20+ Year Treasury Bond Exchange-Traded Fund</undrlyngInstrm>
+		<usMkts>Y</usMkts>
+		<nonUsMkts>N</nonUsMkts>
+		<cashSttl>N</cashSttl>
+		<physSttl>N</physSttl>
+		<amSttl>Y</amSttl>
+		<pmSttl>Y</pmSttl>
+		<othSttl>Trades Locked in at Exchange and settled at NSCC.</othSttl>
+		<indxTyp>N/A</indxTyp>
+		<posLmts>N/A</posLmts>
+	</ndsp>
+	<ndsp>
+		<xchg>Cboe BYZ</xchg>
+		<pstngDt>2024-10-02</pstngDt>
+		<frstTradDt>2024-10-02</frstTradDt>
+		<ticker>TLTQ</ticker>
+		<issrTyp>Trust</issrTyp>
+		<othIssrTyp/>
+		<clss>Exchange-Traded Fund</clss>
+		<othClss/>
+		<undrlyngInstrm>iShares® 20+ Year Treasury Bond Exchange-Traded Fund</undrlyngInstrm>
+		<usMkts>Y</usMkts>
+		<nonUsMkts>N</nonUsMkts>
+		<cashSttl>N</cashSttl>
+		<physSttl>N</physSttl>
+		<amSttl>Y</amSttl>
+		<pmSttl>Y</pmSttl>
+		<othSttl>Trades Locked in at Exchange and settled at NSCC.</othSttl>
+		<indxTyp>N/A</indxTyp>
+		<posLmts>N/A</posLmts>
+	</ndsp>
+	<ndsp>
+		<xchg>Cboe BYZ</xchg>
+		<pstngDt>2024-10-02</pstngDt>
+		<frstTradDt>2024-10-02</frstTradDt>
+		<ticker>HBUX</ticker>
+		<issrTyp>Other</issrTyp>
+		<othIssrTyp>Funding Portal</othIssrTyp>
+		<clss>Other</clss>
+		<othClss>Fungible Token</othClss>
+		<undrlyngInstrm>HustleBucks®</undrlyngInstrm>
+		<usMkts>Y</usMkts>
+		<nonUsMkts>Y</nonUsMkts>
+		<cashSttl>Y</cashSttl>
+		<physSttl>N</physSttl>
+		<amSttl>Y</amSttl>
+		<pmSttl>Y</pmSttl>
+		<othSttl/>
+		<indxTyp>N/A</indxTyp>
+		<posLmts>N/A</posLmts>
+	</ndsp>
+</ndspRpt>

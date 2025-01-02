@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This schema was created by staff of the U.S. Securities and Exchange 
+Commission. Data and content created by government employees within the scope 
+of their employment are not subject to domestic copyright protection. 17 
+U.S.C. 105. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation xml:lang="en">New Derivative Securities Product</xs:documentation>
+  </xs:annotation>
+  <xs:element name="ndspRpt" type="NEW_DERIVATIVE_SECURITIES_PRODUCT_REPORT_TYPE"/>
+  <xs:complexType name="NEW_DERIVATIVE_SECURITIES_PRODUCT_REPORT_TYPE">
+    <xs:sequence>
+      <xs:element name="ndsp" type="NEW_DERIVATIVE_SECURITIES_PRODUCT" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NEW_DERIVATIVE_SECURITIES_PRODUCT">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Document type for a new derivative securities product report. Appendix to Form 19b-4e).</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="xchg" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>Exchange Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="pstngDt" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Date of Posting</xs:documentation>
+        </xs:annotation>
+      </xs:element>	  
+      <xs:element name="frstTradDt" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Date of First Trade</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ticker" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>240.19b-4(e)(2)(ii)(E) Ticker symbol of new derivative securities product, up to 6 characters. Can only occur once in an ndsp element.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>	  
+      <xs:element name="issrTyp">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii)(A) Type of issuer of new derivative securities product: one of "Clearing House", Corporation, "Broker-Dealer", "Bank", "Trust", or "Other".</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="Clearing House"/>
+            <xs:enumeration value="Corporation"/>
+            <xs:enumeration value="Broker-Dealer"/>
+            <xs:enumeration value="Bank"/>
+            <xs:enumeration value="Trust"/>
+            <xs:enumeration value="Other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="othIssrTyp">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii)(A) Type of issuer of new derivative securities product, if "Other", up to 40 characters.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="clss">
+        <xs:annotation>
+          <xs:documentation>240.19b-4(e)(2)(ii)(B) Class of new derivative securities product: one of "Currency Trust Shares", "Equity Linked Notes", "Exchange-Traded Notes", "Trust Issued Receipts", "Exchange-Traded Fund", "Index-Linked Exchangeable Notes", "Option", or "Other"</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="Currency Trust Shares"/>
+            <xs:enumeration value="Equity Linked Notes"/>
+            <xs:enumeration value="Exchange-Traded Notes"/>
+            <xs:enumeration value="Trust Issued Receipts"/>
+            <xs:enumeration value="Exchange-Traded Fund"/>
+            <xs:enumeration value="Index-Linked Exchangeable Notes"/>
+            <xs:enumeration value="Option"/>
+            <xs:enumeration value="Other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="othClss">
+        <xs:annotation>
+          <xs:documentation>240.19b-4(e)(2)(ii)(B) Class of new derivative securities product, if "Other", up to 30 characters.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="undrlyngInstrm">
+        <xs:annotation>
+          <xs:documentation>240.19b-4(e)(2)(ii)(C) Name of underlying instrument, up to 60 characters.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="60"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="usMkts" type="YN_TYPE">
+        <xs:annotation>
+          <xs:documentation>240.19b-4(e)(2)(ii)(F) Market(s) upon which securities comprising the underlying instrument trades, US.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="nonUsMkts" type="YN_TYPE">
+        <xs:annotation>
+          <xs:documentation>240.19b-4(e)(2)(ii)(F) Market(s) upon which securities comprising the underlying instrument trades, non-US.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="cashSttl" type="YN_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii) (G) Settlement methodology of new derivative securities product, cash.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="physSttl" type="YN_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii) (G) Settlement methodology of new derivative securities product, physical.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="amSttl" type="YN_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii) (G) Settlement methodology of new derivative securities product, A.M.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="pmSttl" type="YN_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii) (G) Settlement methodology of new derivative securities product, P.M.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="othSttl">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii) (G) Settlement methodology of new derivative securities product, other, up to 150 characters.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="150"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="indxTyp">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii)(D) If the underlying instrument is an index, identify whether it is broad-based pr narrow-based, else "N/A".</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Broad-based"/>
+            <xs:enumeration value="Narrow-based"/>
+            <xs:enumeration value="N/A"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="posLmts">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">240.19b-4(e)(2)(ii) (H) Position limits of new derivative securities product (if applicable), up to 50 characters; use "N/A" to indicate not applicable.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="YN_TYPE">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Y"/>
+      <xs:enumeration value="N"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,58 @@
+{
+  "name": "ndsp",
+  "repositoryURL": "https://github.com/sec-gov/ndsp",
+  "description": "Schema, sample files, and PDF renderer required under 17 CFR 240.19b-4(e)(2)(ii).",
+  "permissions": {
+    "licenses": [
+      {
+        "URL": "https://github.com/sec-gov/ndsp/blob/master/LICENSE.md",
+        "name": "CC0 1.0"
+      }
+    ],
+    "usageType": "openSource"
+  },
+  "tags": [
+    "US Securities and Exchange Commission",
+    "JavaScript",
+    "PDF",
+    "17 CFR 240.19b-4(e)(2)(ii)",
+    "New Derivative Security Product Report"
+  ],
+  "contact": {
+    "email": "StructuredData@sec.gov"
+  },
+  "organization": "US Securities and Exchange Commission",
+  "status": "Production",
+  "vcs": "git",
+  "homepageURL": "https://www.sec.gov/",
+  "languages": [
+    "JavaScript",
+    "HTML"
+  ],
+  "relatedCode": [
+    {
+      "name": "oh",
+      "URL": "https://github.com/sec-gov/oh"
+    },
+    {
+      "name": "dmdr",
+      "URL": "https://github.com/sec-gov/dmdr"
+    }
+  ],
+  "reusedCode": [
+    {
+      "name": "pdfkit",
+      "URL": "https://github.com/sec-gov/pdfkit"
+    },
+    {
+      "name": "pdfmake",
+      "URL": "https://github.com/sec-gov/pdfmake"
+    }
+  ],
+  "date": {
+    "created": "2024-12-31",
+    "lastModified": "2025-02-15",
+    "metadataLastUpdated": "2025-06-27"
+  },
+  "laborHours": 40
+}
